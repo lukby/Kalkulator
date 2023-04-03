@@ -1,5 +1,8 @@
 # Kalkulator
-Proyek individu kalkulator berbasis WEB (HTML, CSS, dan JavaScript) by PROGATE.
+Proyek individu oleh Progate.
+Kalkulator berbasis WEB (HTML, CSS, dan JavaScript).
+
+
 
 # Screenshot
 ![ss-2](https://user-images.githubusercontent.com/74885724/229422744-33768106-e383-4383-ba7a-3e137204873b.png)
