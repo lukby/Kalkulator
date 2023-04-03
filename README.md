@@ -1,6 +1,5 @@
 # Kalkulator
-Proyek individu oleh Progate.
-Kalkulator berbasis WEB (HTML, CSS, dan JavaScript).
+Proyek individu oleh progate kalkulator berbasis WEB (HTML, CSS, dan JavaScript).
 
 
 
