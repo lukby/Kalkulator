@@ -6,7 +6,7 @@ angkaangka.forEach((angka) => {
     })
 })
 
-const hasil = document.querySelector('.kalkulator-hasil')
+const hasil = document.querySelector(".kalkulator-hasil")
 const hasilBaru = (angka) => {
     hasil.value = angka
 }
@@ -38,7 +38,7 @@ const inputOperator = (operator) => {
     currentAngka = '0'
 }
 
-const hasilAkhir = document.querySelector('.hasil-akhir')
+const hasilAkhir = document.querySelector(".hasil-akhir")
 hasilAkhir.addEventListener('click', () => {
     kalkulasi()
     hasilBaru(currentAngka)
@@ -59,9 +59,6 @@ const kalkulasi = () => {
         case "/":
             result = parseFloat (prevAngka) / parseFloat (currentAngka)
             break
-        case "%":
-            result = (parseFloat (prevAngka)*1) / 100
-            break
         default:
             break
     }
@@ -69,7 +66,7 @@ const kalkulasi = () => {
     kalkulatorOperator = ''
 }
 
-const hapus = document.querySelector('.hapus-semua')
+const hapus = document.querySelector(".hapus-semua")
 hapus.addEventListener('click', () => {
     semuaDihapus()
     hasilBaru(currentAngka)
@@ -81,7 +78,7 @@ const semuaDihapus = () => {
     currentAngka = '0'
 }
 
-const titik = document.querySelector('.titik')
+const titik = document.querySelector(".titik")
 titik.addEventListener('click', (event) => {
     inputTitik(event.target.value)
     hasilBaru(currentAngka)
@@ -92,4 +89,14 @@ inputTitik = (dot) => {
         return
     }
     currentAngka += dot
+}
+
+const persen = document.querySelector(".persen")
+persen.addEventListener('click', (event) => {
+    inputPersen(currentAngka)
+    hasilBaru(currentAngka)
+})
+
+const inputPersen = (angka) => {
+    currentAngka = parseFloat(angka) / 100
 }
